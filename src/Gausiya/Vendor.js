@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './vendor.css'
 
 const VendorOnboardingForm = () => {
-    const [vendorLogo, setVendorLogo] = useState('');
+    // const [vendorLogo, setVendorLogo] = useState('');
   const [vendorName, setVendorName] = useState('');
   const [vendorEmail, setVendorEmail] = useState('');
   const [vendorAddress, setVendorAddress] = useState('');
@@ -13,7 +13,7 @@ const VendorOnboardingForm = () => {
     e.preventDefault();
     // Perform form submission logic here
     // You can send the form data to an API or handle it as needed
-    console.log('vendorLogo:',vendorLogo)
+    // console.log('vendorLogo:',vendorLogo)
     console.log('Vendor Name:', vendorName);
     console.log('Vendor Email:', vendorEmail);
     console.log('Vendor Address:', vendorAddress);
