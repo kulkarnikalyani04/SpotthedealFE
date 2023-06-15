@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './RegistrationForm.css';
-
+import './RegistrationForm.css'
 function RegistrationForm() {
   const [FirstName, setFirstName] = useState('');
   const [MiddleName, setMiddleName] = useState('');
@@ -26,7 +25,7 @@ function RegistrationForm() {
   };
 
   return (
-    <div className='RegistrationForm'>
+    <div>
     {!submitted ? (
         <form onSubmit={handleSubmit}>
         <h1>Registration Form</h1>
