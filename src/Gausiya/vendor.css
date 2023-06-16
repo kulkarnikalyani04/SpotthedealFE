@@ -18,6 +18,7 @@
   position: absolute;
   white-space: nowrap;
   width: 1px;
+
 }
 .search h1{
 margin: auto;
@@ -38,6 +39,7 @@ color: #222690;
 .vendorForm div {
   margin-bottom: 15px;
 }
+
 .searchbar div {
   margin-bottom: 15px;
 }
