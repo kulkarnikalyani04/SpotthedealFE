@@ -7,7 +7,7 @@ import data from './Template.json'
 export default function InterestPage() {
   return (
     <div className="first">
-        <div className="header">
+        <div className="interest_header">
         <h1>Choose your interests</h1>
         <div className="main">
            {
