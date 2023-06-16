@@ -12,7 +12,7 @@ import CraftList from './CraftList';
 
 function ProductListPage() {
   return (
-    <div className="App">
+    <div className="Product-List-Page">
     <h1>Gaming Laptop</h1>
       <ProductList />,
       <h1>Home Appliances</h1>
