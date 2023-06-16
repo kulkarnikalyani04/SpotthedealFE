@@ -28,7 +28,7 @@ const ProductTable = () => {
   };
 
   return (
-    <div>
+    <div>  
       {!showDetails ? (
         <div>
           <center>
