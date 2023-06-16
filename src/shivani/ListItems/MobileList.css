@@ -5,7 +5,6 @@
     justify-content: center;
     gap: 1rem;
   }
-  
 /*Mobile.css */
 .Mobile {
   display: flex;
@@ -24,8 +23,5 @@
   font-size: 2.0rem;
   text-align:center;
 }
-h1{
-  text-align: center;
-  font-size: 5.0rem;
-}
+
 

@@ -1,7 +1,7 @@
-body{
+.Registation-Form{
   background-color:white;
 }
-form {
+.Registation-Form form {
   max-width: 500px;
   margin: 0 auto;
   background-color: #f2f2f2;
@@ -9,23 +9,25 @@ form {
   justify-content: center;
   margin-top: 5%;
   }
-  h1{
+.Registation-Form h1{
     width: 95%;
    background-color:rgb(7,2,71) ;
    padding: 35px;
    color: white;
   }
 
-table {
+.Registation-Form table {
   width: 100%;
   border-collapse: collapse;
 }
 
-td {
+.Registation-Form td {
   padding: 0.5rem;
   vertical-align:middle;
 }
-input[type=text],select{
+
+
+.Registation-Form input[type=text],select{
   width: 110%;
   padding: 14px 20px;
   margin: 8px 0;
@@ -35,7 +37,7 @@ input[type=text],select{
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type=password],select{
+.Registation-Form input[type=password],select{
   width:110%;
   padding: 16px 20px;
   margin: 8px 0;
@@ -46,18 +48,18 @@ input[type=password],select{
   box-sizing: border-box;
 }
 
-label {
+.Registation-Form label {
   display: block;
   margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
-input {
+.Registation-Form input {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
-button {
+.Registation-Form button {
   padding: 0.5rem 1rem;
   background-color:#45a049;
   color: #fff;
@@ -67,13 +69,13 @@ button {
   width: 40%;
 }
 
-button:hover {
+.Registation-Form button:hover {
   background-color:#45a049;
 }
-h2{
+.Registation-Form h2{
   text-align: center;
 }
-h3{
+.Registation-Form h3{
   text-align: center;
 }
   

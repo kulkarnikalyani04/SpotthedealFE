@@ -5,7 +5,6 @@
   justify-content: center;
   gap: 1rem;
 }
-
 /*MovieList.css */
 .Movie {
 display: flex;
@@ -14,19 +13,14 @@ align-items: center;
 margin-bottom: 2rem;
 width: 800px;
 }
-
 .Movie-list img {
 width: 70%;
 height: 8s00px;
 object-fit: cover;
 margin-bottom: 0.5rem;
 }
-
 .Movie-list h3 {
 font-size: 2.0rem;
 text-align:center;
 }
-h1{
-text-align: center;
-font-size: 5.0rem;
-}
+

@@ -25,7 +25,9 @@ function RegistrationForm() {
   };
 
   return (
-    <div >
+
+    <div className='Registation-Form'>
+
     {!submitted ? (
         <form onSubmit={handleSubmit}>
         <h1>Registration Form</h1>
