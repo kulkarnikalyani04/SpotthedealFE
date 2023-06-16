@@ -1,73 +1,72 @@
 *{
-    background-color: bisque;
-    
-  }
+  background-color: bisque;
   
-  #table {
-    border-collapse: collapse;
+}
+
+.ProductTable table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+ 
+  .ProductTable td,th{
+    text-align: center;
     border: 1px solid black;
+    background-color: lightgray;
     padding: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-   
-    td,th{
-      text-align: center;
-      border: 1px solid black;
-      background-color: lightgray;
-      padding: 2px;
-    }
-   
-    input{
-      border: none;
-      box-shadow: 0px 0px 10px rgba(67, 65, 65, .4);
-      font-size: 1.2rem;
-      outline: none;
-      padding: 2px;
-      margin: 2px;
-      border:5px solid transparent;
-      border-radius: 200px;
-    }
-    input:focus{
-      text-decoration: none;
-    }
-    input:focus-within{
-      border:  2px solid aqua;
-    }
-  
-   
-    #btnadd{
-      color: rgb(7, 6, 7);
-      width: 250px;
-      background-color: rgb(121, 147, 189);
-      padding: 5px 5px;
-      border-radius: 200px;
-      border:3px solid transparent;
-    }
-    
-    #btn{
-      color: rgb(7, 6, 7);
-      width: 70px;
-      background-color: rgb(121, 147, 189);
-      padding: 2px 2px;
-      border-radius: 200px;
-    }
-  
-    #btngoback{
-      color: rgb(7, 6, 7);
-      width: 80px;
-      background-color: rgb(121, 147, 189);
-      padding: 2px 2px;
-      border-radius: 200px;
-      padding: 2px 2px;
-    }
-  
-  .cart {
-    background-color: #ae829d;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 400px;
+  }
+ 
+  .ProductTable input{
+    border: none;
+    box-shadow: 0px 0px 10px rgba(67, 65, 65, .4);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 2px;
+    margin: 2px;
+    border:5px solid transparent;
+    border-radius: 200px;
+  }
+  .ProductTable input:focus{
+    text-decoration: none;
+  }
+  .ProductTable input:focus-within{
+    border:  2px solid aqua;
+  }
+
+ 
+  .ProductTable #btnadd{
+    color: rgb(7, 6, 7);
+    width: 250px;
+    background-color: rgb(121, 147, 189);
+    padding: 5px 5px;
+    border-radius: 200px;
+    border:3px solid transparent;
   }
   
+  .ProductTable #btndetails{
+    color: rgb(7, 6, 7);
+    width: 70px;
+    background-color: rgb(121, 147, 189);
+    padding: 2px 2px;
+    border-radius: 200px;
+  }
+
+  .ProductTable #btngoback{
+    color: rgb(7, 6, 7);
+    width: 80px;
+    background-color: rgb(121, 147, 189);
+    padding: 2px 2px;
+    border-radius: 200px;
+    padding: 2px 2px;
+  }
+
+.cart {
+  background-color: #ae829d;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 400px;
+}

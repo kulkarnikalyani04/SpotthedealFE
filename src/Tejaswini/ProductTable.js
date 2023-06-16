@@ -5,6 +5,7 @@ const ProductTable = () => {
   const [currentProduct, setCurrentProduct] = useState({});
   const [showDetails, setShowDetails] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState({});
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (event) => {
     setCurrentProduct({
@@ -14,8 +15,14 @@ const ProductTable = () => {
   };
 
   const handleAddProduct = () => {
+    if (!currentProduct.id || !currentProduct.name || !currentProduct.price || !currentProduct.description) {
+      setErrorMessage('Please enter data');
+      return;
+    }
+
     setProducts([...products, currentProduct]);
     setCurrentProduct({});
+    setErrorMessage('');
   };
 
   const handleDetails = (product) => {
@@ -28,14 +35,14 @@ const ProductTable = () => {
   };
 
   return (
-    <div>
+    <div className='ProductTable'>
       {!showDetails ? (
         <div>
           <center>
           <h2>Product Table</h2>
-
-          <table id='table'>
-            <thead id='td'>
+        
+          <table>
+            <thead>
               <tr>
                 <th>ID</th>
                 <th>Product Name</th>
@@ -52,30 +59,34 @@ const ProductTable = () => {
                   <td>{product.price}</td>
                   <td>{product.description}</td>
                   <td>
-                    <button id='btn' onClick={() => handleDetails(product)}>Details</button>
+                    <button id='btndetails' onClick={() => handleDetails(product)}>Details</button>
                   </td>
                 </tr>
               ))}
             </tbody>
-          </table><br/><br/><br/>
-        
+          </table><br/><br/>
+
           <h3>Add Product</h3>
-            <input type="text" name="id" placeholder='ID' value={currentProduct.id || ''} onChange={handleInputChange} />
-            <input type="text" name="name" placeholder='Name' value={currentProduct.name || ''} onChange={handleInputChange} />
-            <input type="text" name="price" placeholder='Price' value={currentProduct.price || ''} onChange={handleInputChange} />
-            <input type="text" name="description" placeholder='Discription' value={currentProduct.description || ''} onChange={handleInputChange} /><br/><br/><br/>
+            <input type="text" placeholder='Product Id' name="id" value={currentProduct.id || ''} onChange={handleInputChange} />         
+            <input type="text" placeholder='Product Name' name="name" value={currentProduct.name || ''} onChange={handleInputChange} />        
+            <input type="text" placeholder='Price' name="price" value={currentProduct.price || ''} onChange={handleInputChange} />
+            <input type="text" placeholder='Dicscription' name="description" value={currentProduct.description || ''} onChange={handleInputChange} /><br/><br/><br/>
+          {errorMessage && <p>{errorMessage}</p>}
+          <div>
             <button id='btnadd' onClick={handleAddProduct}>Add</button>
-        </center>
+          </div></center>
         </div>
+        
       ) : (
         <div className="cart">
-          <h2>Order Summary</h2>
+          <h2>Product Details</h2>
           <p>ID: {selectedProduct.id}</p>
           <p>Product Name: {selectedProduct.name}</p>
           <p>Price: {selectedProduct.price}</p>
           <p>Description: {selectedProduct.description}</p>
           <p>Discount: 10%</p>
           <p>Total Price: {selectedProduct.price - (selectedProduct.price * 0.1)}</p>
+        
           <button id='btngoback' onClick={handleGoBack}>Go Back</button>
         </div>
       )}
