@@ -1,5 +1,6 @@
 import React from "react";
 const SearchBar = () => (
+    <div className="searchbar">
     <form action="/" method="get">
         <label htmlFor="header-search">
             <span className="visually-hidden">Search blog posts</span>
@@ -14,6 +15,7 @@ const SearchBar = () => (
         />
         <button type="submit">Browse</button>
     </form>
+    </div>
 );
 
 export default SearchBar;

@@ -22,7 +22,7 @@ const VendorOnboardingForm = () => {
     console.log('vendorGST:',vendorGST)
   };
 
-  return (<>
+  return (<div className='vendorForm'>
 
     <form onSubmit={handleSubmit}>
     {/* <div>
@@ -98,7 +98,7 @@ const VendorOnboardingForm = () => {
       <button type="submit1">Submit</button>
       <button type="submit2">Cancel</button>
     </form>
-    </>
+    </div>
   );
 };
 

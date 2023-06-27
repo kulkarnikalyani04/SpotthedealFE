@@ -5,7 +5,8 @@ import InterestPage from "./Rashmi/InterestPage.js";
 import ProductDetailsPage from "./ProductDetails/ProductDetailsPage";
 import  VendorOnboardingForm from './Gausiya/Vendor';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import ProductListPage from './shivani/ListItems/ProductListPage';
+import ProductTable from './Tejaswini/ProductTable';
 class App extends React.Component {
   render() {
     return (
@@ -26,6 +27,12 @@ class App extends React.Component {
             </li>
             <li>
               <Link to="/VendorOnboardingForm">  VendorOnboarding Form</Link>
+            </li>
+            <li>
+              <Link to="/ProductListPage">  Product List Page</Link>
+            </li>
+            <li>
+              <Link to="/ProductTable"> Product Table </Link>
             </li>
           </ul>
           <Routes>
@@ -51,6 +58,16 @@ class App extends React.Component {
               exact
               path="/VendorOnboardingForm"
               element={<VendorOnboardingForm />}
+            ></Route>
+            <Route
+              exact
+              path="/ProductListPage"
+              element={<ProductListPage />}
+            ></Route>
+            <Route
+              exact
+              path="/ProductTable"
+              element={<ProductTable />}
             ></Route>
           </Routes>
         </div>
