@@ -1,0 +1,124 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .image-wrapper.selected {
+    border: 2px solid blue;
+  }
+  
+  .tick-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tick-icon svg {
+    fill: white;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .image-name {
+    color: black;
+    font-size: 17px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+  
+  .image-wrapper img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  
+  
+  .Interest h1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #060268;
+    font-size: 40px;
+    text-shadow: 7px 7px 8px rgba(0, 0, 0, 0.4);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    background-color: #060268;
+    color: aliceblue;
+    border-radius: 20px;
+    display: block;
+  }
+  
+  body{
+    background-color: rgb(250, 245, 231);
+  }
+  
+  
+  @media screen and (max-width: 1050px) {
+    .image-container {
+      /* margin-left: 0; */
+      width: 100%;
+      justify-content: center;
+    }
+    .Interest h1{
+      justify-content: left;
+      width: 100%;
+  
+    }
+    .image-wrapper img {
+      
+      justify-content: center;
+    }
+    .btn{
+      justify-content:center;
+    }
+   
+  
+  }
+  
+  
+  @media screen and (max-width: 100px) {
+  
+    .image-wrapper {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      justify-content: center;
+    }
+    .Interest h1{
+      justify-content: left;
+     
+    }
+    .image-wrapper img {
+      width: 150px;
+      height: 120px;
+      object-fit: cover;
+      justify-content: center;
+    }
+   
+  
+  }
+  
