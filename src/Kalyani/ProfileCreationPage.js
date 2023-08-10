@@ -50,11 +50,10 @@ const ProfileCreationPage = () => {
       <h1 className="page-title">Lets setup your Profile ! </h1>
 
       {/* Profile Picture Upload */}
-     {/* <div> */}
-        {/* <label>Profile Picture</label> */}
-        {/* <input type="file" accept="image/*" /> */}
-        {/* Add preview of the uploaded picture if desired */}
-      {/* </div>  */}
+     <div>
+        <label>Profile Picture</label>
+        <input type="file" accept="image/*" />
+      </div> 
 
       {/* Profile Information Form */}
       <form onSubmit={handleProfileSave}>

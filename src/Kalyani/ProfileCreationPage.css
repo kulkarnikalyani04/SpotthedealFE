@@ -1,7 +1,7 @@
 .profile-creation-page {
     max-width: 600px;
-    margin: 30px auto;
-    padding: 40px;
+    margin: 20px auto;
+    padding: 25px;
     background-color: #f1f1f1;
     border-radius: 18px;
     box-shadow: 0 0 10px rgba(67,65,65,0.4);
@@ -20,7 +20,7 @@
   }
   
   .profile-creation-page form {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .profile-creation-page label {
@@ -39,19 +39,20 @@
   }
   
   .subBut{
+    display: flex;
     justify-content: center;
+    /* margin-top: 20px;  */
   }
 
   .save-btn {
     background-color: #007bff ;
     color: #fff;
     border: none;
-    margin-top: 30px;
+    margin-top: 25px;
     border-radius: 15px;
     padding: 10px 20px;
     cursor: pointer;
     width: 130px;
-
   }
   
   .save-btn:hover {
@@ -78,7 +79,7 @@
   .profile-creation-page {
     max-width: 720px;
     margin: 40px auto;
-    padding: 50px;
+    padding: 25px;
   }
 }
 
