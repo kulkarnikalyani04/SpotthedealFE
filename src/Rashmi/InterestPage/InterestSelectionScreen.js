@@ -53,7 +53,7 @@ const InterestSelectionScreen = () => {
         ))}
       </div>
 
-      <button className='btn'>Next </button>
+      <button className='Nextbtn'>Next </button>
     </div>
   );
 };

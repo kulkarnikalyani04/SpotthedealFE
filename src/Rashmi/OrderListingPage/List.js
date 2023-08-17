@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { element } from 'prop-types';
 import SearchBar from './SearchBar';
+import "./OrderListingPage/List.css"; 
+ 
 // import axios from 'axios';
 
 function OrderTable() {
@@ -19,9 +21,9 @@ function OrderTable() {
     //   });
 
     const orderData = [
-      { orderNumber: 1, name: 'John Doe', date: '10:00 AM', amount: '2000', status: 'Ordered' },
-      { orderNumber: 2, name: 'Jane Smith', date: '11:30 AM', amount: '7000', status: 'Ordered' },
-      { orderNumber: 3, name: 'Bob Johnson', date: '02:45 PM', amount: '5000', status: 'Ordered' },
+      { orderNumber: 1, name: 'John Doe', date: '12/03/2023', amount: '2000', status: 'Ordered' },
+      { orderNumber: 2, name: 'Jane Smith', date: '16/04/2023', amount: '7000', status: 'Ordered' },
+      { orderNumber: 3, name: 'Bob Johnson', date: '23/06/2023', amount: '5000', status: 'Ordered' },
     ];
     setOrders(orderData);
 

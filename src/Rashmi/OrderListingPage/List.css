@@ -1,0 +1,74 @@
+@import url("https://cdn.syncfusion.com/ej2/bootstrap5.css");
+
+.order {
+  padding: 2s0px;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 5px 20px 0 rgba(181, 41, 41, 0.05)
+}
+
+.order h1 {
+  color: rgb(16, 16, 123);
+  margin-top: 20 px;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.table-cell {
+  padding: 15px;
+  
+  width: 2.10rem;
+  height: 2.10rem;
+  font-size: .818125rem;
+}
+
+.order_list {
+ 
+  padding: 10px;
+  color: rgb(146, 64, 64);
+
+  font-size: 20px;
+  box-shadow: 0 5px 20px 0 rgba(181, 41, 41, 0.05);
+}
+
+body {
+
+ 
+  box-shadow: 0 20px 20px 0 rgba(181, 41, 41, 0.05);
+}
+.order th,
+.order td {
+  border-bottom: 1px solid #222020;
+  box-shadow: 0 5px 20px 0 rgba(181, 41, 41, 0.05);
+  padding: 8px;
+  text-align: left;
+  border-left:  1px solid #222020; 
+  box-shadow: 0 5px 20px 0 rgba(181, 41, 41, 0.05);
+ } 
+.order th {
+  background-color: #f2f2f2;
+  border-top:  1px solid #222020;
+ 
+} 
+
+@media screen and (max-width: 768px) {
+  .order {
+    width: 100%;
+  }
+
+  .order h1 {
+    text-align: left;
+  }
+
+  .table-cell {
+    font-size: 0.75rem;
+  }
+
+  .order_list {
+    font-size: 20px;
+  }
+} 
+
+ 
